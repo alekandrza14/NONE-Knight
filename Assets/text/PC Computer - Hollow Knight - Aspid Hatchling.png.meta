@@ -1,0 +1,363 @@
+fileFormatVersion: 2
+guid: a8dc70225ecc04c4eb6379179bae4339
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 302
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b093ecc07f61d7b418e44d84d4acfa9d
+      internalID: 29603464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 299
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a67bfa4703e9241b5fcf239ea6bb91
+      internalID: -13348263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 298
+        width: 81
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e299f14d04a984c946ebcb1872b772
+      internalID: -1467292609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_3
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 301
+        width: 81
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31d5c04d49f76c45b49c7e6e1eae33f
+      internalID: 1693147910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 190
+        width: 43
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9affd4aed751d041a6234e0899ada33
+      internalID: 1884603447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 187
+        width: 39
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d067966c20c9a4b886e2b70e9f857b
+      internalID: -2089329824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 36
+        width: 133
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4ccdb7a6366f24499f0419d0fe595e
+      internalID: 73514001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 56
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226a0afdab684754187ecb7cf7ae8e01
+      internalID: 765146482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 207
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c05a1f8963d6d649935ae44ff27e529
+      internalID: 416957212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Hollow Knight - Aspid Hatchling_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 32
+        width: 127
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8d3463f5a888c4a9229a42b8d99837
+      internalID: 959389487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Hollow Knight - Aspid Hatchling_2: -1467292609
+      PC Computer - Hollow Knight - Aspid Hatchling_12: -1385674928
+      PC Computer - Hollow Knight - Aspid Hatchling_13: 317126519
+      PC Computer - Hollow Knight - Aspid Hatchling_16: 1786149128
+      PC Computer - Hollow Knight - Aspid Hatchling_10: 1996476029
+      PC Computer - Hollow Knight - Aspid Hatchling_22: -595936524
+      PC Computer - Hollow Knight - Aspid Hatchling_29: -322317977
+      PC Computer - Hollow Knight - Aspid Hatchling_7: 765146482
+      PC Computer - Hollow Knight - Aspid Hatchling_15: -292715899
+      PC Computer - Hollow Knight - Aspid Hatchling_1: -13348263
+      PC Computer - Hollow Knight - Aspid Hatchling_8: 416957212
+      PC Computer - Hollow Knight - Aspid Hatchling_21: -1836999126
+      PC Computer - Hollow Knight - Aspid Hatchling_24: -1427671032
+      PC Computer - Hollow Knight - Aspid Hatchling_30: -437782309
+      PC Computer - Hollow Knight - Aspid Hatchling_9: 959389487
+      PC Computer - Hollow Knight - Aspid Hatchling_4: 1884603447
+      PC Computer - Hollow Knight - Aspid Hatchling_11: 1375725876
+      PC Computer - Hollow Knight - Aspid Hatchling_25: -880047607
+      PC Computer - Hollow Knight - Aspid Hatchling_27: 276600575
+      PC Computer - Hollow Knight - Aspid Hatchling_20: 2098532430
+      PC Computer - Hollow Knight - Aspid Hatchling_17: 995951566
+      PC Computer - Hollow Knight - Aspid Hatchling_0: 29603464
+      PC Computer - Hollow Knight - Aspid Hatchling_3: 1693147910
+      PC Computer - Hollow Knight - Aspid Hatchling_5: -2089329824
+      PC Computer - Hollow Knight - Aspid Hatchling_23: 212686179
+      PC Computer - Hollow Knight - Aspid Hatchling_28: -1337561233
+      PC Computer - Hollow Knight - Aspid Hatchling_14: -1207741321
+      PC Computer - Hollow Knight - Aspid Hatchling_26: 185601738
+      PC Computer - Hollow Knight - Aspid Hatchling_19: -863304264
+      PC Computer - Hollow Knight - Aspid Hatchling_6: 73514001
+      PC Computer - Hollow Knight - Aspid Hatchling_18: -1168949286
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
