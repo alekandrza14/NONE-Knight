@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22d5662b396602a4a95484a4c85cd7e0
+guid: 4994ec9d5f6f7cc4b8c497a11ac9bbe4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -66,10 +66,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,101 +100,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NONE Knight Amulets_0
+      name: none Knight 8_0
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 645
-        width: 132
-        height: 151
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4734598}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31b7e9dea8800a340ba4725fe48200c7
-      internalID: 128950043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NONE Knight Amulets_1
-      rect:
-        serializedVersion: 2
-        x: 1259
-        y: 12
-        width: 163
-        height: 143
-      alignment: 9
-      pivot: {x: 0.5797164, y: 0.47046876}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71894eb25c07f154bbf42c465904c7ce
-      internalID: -1326734500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NONE Knight Amulets_2
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 8
-        width: 130
-        height: 132
-      alignment: 9
-      pivot: {x: 0.4788715, y: 0.4817928}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6909c65293d79614bb85122531c5d189
-      internalID: 872734291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NONE Knight Amulets_3
-      rect:
-        serializedVersion: 2
-        x: 723
-        y: 383
-        width: 57
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1db1b147bb92a874fba2ce8aaa091f43
-      internalID: 1285736887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NONE Knight Amulets_4
-      rect:
-        serializedVersion: 2
-        x: 1011
-        y: 957
-        width: 136
-        height: 140
+        x: 21
+        y: 3
+        width: 75
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d765112b51b8ad74c988cdb5f818b2bc
-      internalID: 581980239
+      spriteID: a88f4bff93f26f647922feddb3e5f59d
+      internalID: -1699170317
       vertices: []
       indices: 
       edges: []
@@ -219,11 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NONE Knight Amulets_0: 128950043
-      NONE Knight Amulets_4: 581980239
-      NONE Knight Amulets_3: 1285736887
-      NONE Knight Amulets_2: 872734291
-      NONE Knight Amulets_1: -1326734500
+      none Knight 8_0: -1699170317
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

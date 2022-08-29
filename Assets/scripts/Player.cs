@@ -104,11 +104,15 @@ public class Player : MonoBehaviour
     public float jumpf;
     public float jump;
     public bool fall;
+    public bool isgraund;
+    public int jumps;
     public Vector3 tp;
     public Sprite[] sp;
     public SpriteRenderer s;
     public Animator anim1;
+    public Vector2 dir;
     public int rot;
+    public float helltic;
     public float sansact;
     public PlayerSave ps = new PlayerSave();
     private void Start()
@@ -124,18 +128,44 @@ public class Player : MonoBehaviour
     {
         playerdata.checkeffect();
         invisible();
+        hell();
     }
     public void invisible()
     {
         if (playerdata.Geteffect("invisible") != null)
         {
-            s.color = new Color(1,1,1,0.1f);
+            s.color = new Color(1, 1, 1, 0.1f);
             playerdata.inv = true;
         }
         else
         {
             s.color = new Color(1, 1, 1, 1);
             playerdata.inv = false;
+        }
+    }
+    public void hell()
+    {
+        if (playerdata.Geteffect("hell") != null)
+        {
+            helltic += Time.deltaTime;
+            if (helltic > 1)
+            {
+                playerdata.hp += 1;
+                if (Random.Range(0,6) ==3)
+                {
+                    playerdata.hp += 1;
+                }
+                else
+                {
+
+
+                    helltic = 0;
+                }
+            }
+        }
+        else
+        {
+            
         }
     }
     private void OnCollisionStay(Collision collision)
@@ -163,6 +193,11 @@ public class Player : MonoBehaviour
         {
             for (int i =0;i<playerdata.overload();i++)
             {
+                if (!isgraund && jumps > 0)
+                {
+                    jumpf = jump;
+                    jumps--;
+                }
                 Instantiate(Resources.Load<damagetrigger>("damagetrigger"), transform.position, Quaternion.identity);
             }
         }
@@ -196,15 +231,39 @@ public class Player : MonoBehaviour
         {
             v3 = -transform.right;
         }
+        if (!isgraund)
+        {
+            v3 = -transform.up;
+        }
         if (playerdata.overload() == 2)
         {
             v3 += new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f));
         }
         return v3;
     }
+
+    public void phisics()
+    {
+        
+        Ray r = new Ray(transform.position, -Vector3.up);
+        Debug.DrawRay(transform.position,- Vector3.up);
+        RaycastHit hit;
+        if (Physics.Raycast(r,out hit))
+        {
+            if (hit.distance <= 0.48f)
+            {
+                isgraund = true;
+                jumps = 3;
+            }
+            else
+            {
+                isgraund = false;
+            }
+        }
+    }
     public void anim()
     {
-        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0 || Input.GetButton("Jump") || jumpf <= -3 || Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0 || Input.GetButton("Jump") || !isgraund || Input.GetKeyDown(KeyCode.Mouse0))
         {
             sansact = 0;
         }
@@ -217,57 +276,33 @@ public class Player : MonoBehaviour
             PlayerSave.Save(ps);
             anim1.Play("New Animation13");
             Debug.Log("сохранено");
-
-        }
-        if (sansact >= 6.5f)
-        {
             sansact = 0;
-
         }
+        
 
         if (sansact < 5)
         {
 
-
-            if (rot == 1)
-            {
-                anim1.SetTrigger("^");
-            }
-            if (rot == 0)
-            {
-                anim1.SetTrigger("v");
-            }
-            if (rot == 3)
-            {
-                anim1.SetTrigger(">");
-            }
-            if (rot == 2)
-            {
-                anim1.SetTrigger("<");
-            }
+            dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            anim1.SetFloat("x", dir.x);
+            anim1.SetFloat("y", dir.y);
             if (playerdata.Geteffect("recontrol") == null)
             {
                 if (Input.GetAxis("Vertical") > 0)
                 {
                     rot = 1;
-                    anim1.SetTrigger("^");
                 }
                 if (Input.GetAxis("Vertical") < 0)
                 {
                     rot = 0;
-                    anim1.SetTrigger("v");
                 }
                 if (Input.GetAxis("Horizontal") > 0)
                 {
                     rot = 3;
-                    anim1.SetTrigger(">");
-                    s.flipX = false;
                 }
                 if (Input.GetAxis("Horizontal") < 0)
                 {
                     rot = 2;
-                    anim1.SetTrigger("<");
-                    s.flipX = true;
                 }
             }
             if (playerdata.Geteffect("recontrol") != null)
@@ -275,59 +310,54 @@ public class Player : MonoBehaviour
                 if (Input.GetAxis("Horizontal") > 0)
                 {
                     rot = 3;
-                    anim1.SetTrigger(">");
-                    s.flipX = false;
                 }
                 if (Input.GetAxis("Horizontal") < 0)
                 {
                     rot = 2;
-                    anim1.SetTrigger("<");
-                    s.flipX = true;
                 }
                 if (Input.GetAxis("Vertical") > 0)
                 {
                     rot = 1;
-                    anim1.SetTrigger("^");
                 }
                 if (Input.GetAxis("Vertical") < 0)
                 {
                     rot = 0;
-                    anim1.SetTrigger("v");
                 }
             }
         }
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            playerdata.hp = 1;
+        }
+        phisics();
         EFFECTupdate();
         anim();
         rotates();
         Vector3 h = transform.forward * Input.GetAxis("Vertical") * playerdata.overload();
         Vector3 w = transform.right * Input.GetAxis("Horizontal") * playerdata.overload();
-        if (Input.GetButton("Jump") && fall) 
+        if (Input.GetButton("Jump") && isgraund) 
         {
-            fall = false;
+            
             jumpf = jump;
         }
         Vector3 j2 = transform.up * Input.GetAxis("Jump");
-        if (c == null && jumpf > -5)
+        if (jumpf > -5 && !isgraund)
         {
             jumpf -= Time.deltaTime * 9.14f;
         }
-        if (c == null && jumpf <= -5)
+        if (jumpf <= -5 && !isgraund)
         {
             jumpf -= -5;
         }
-        if (!fall)
+        if (!isgraund)
         {
             j2 += Vector3.up * jumpf;
         }
         Vector3 j = j2;
-        if (c != null)
-        {
-            fall = true;
-            jumpf = jump;
-        }
+        
         Vector3 f = w + h + j;
         if (playerdata.Geteffect("damage") != null)
         {
