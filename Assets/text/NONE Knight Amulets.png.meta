@@ -3,7 +3,7 @@ guid: 22d5662b396602a4a95484a4c85cd7e0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -196,7 +199,7 @@ TextureImporter:
         width: 136
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,6 +207,69 @@ TextureImporter:
       bones: []
       spriteID: d765112b51b8ad74c988cdb5f818b2bc
       internalID: 581980239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NONE Knight Amulets_5
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 41
+        width: 217
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1d9930a1b1cb54c9db34091c6ea5b7
+      internalID: 1976836624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NONE Knight Amulets_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 9
+        width: 235
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f960e7ebd2bc14c87de811c1d45e81
+      internalID: -2082447751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NONE Knight Amulets_7
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 524
+        width: 123
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7503ae0435d664aa07cbbb4016d343
+      internalID: -1733485799
       vertices: []
       indices: 
       edges: []
@@ -220,13 +286,15 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       NONE Knight Amulets_0: 128950043
-      NONE Knight Amulets_4: 581980239
-      NONE Knight Amulets_3: 1285736887
-      NONE Knight Amulets_2: 872734291
       NONE Knight Amulets_1: -1326734500
-  spritePackingTag: 
+      NONE Knight Amulets_2: 872734291
+      NONE Knight Amulets_3: 1285736887
+      NONE Knight Amulets_4: 581980239
+      NONE Knight Amulets_5: 1976836624
+      NONE Knight Amulets_6: -2082447751
+      NONE Knight Amulets_7: -1733485799
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
